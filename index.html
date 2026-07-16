@@ -254,6 +254,49 @@ document.getElementById('btn1').href = shuffled[0];
 document.getElementById('btn2').href = shuffled[1];
 document.getElementById('btn3').href = shuffled[2];
 </script>
+<div style="text-align: center; margin: 30px 0;">
+<center><div class="copyright"><font color="White">Copyright @ 2026 <strong>Jaimie Hutcherson</strong></font></div></center>
+</footer>
+<br>
+<script>
+  // Disable right click
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
+  // Disable common inspect shortcuts
+  document.addEventListener('keydown', function(e){
+
+    // F12
+    if(e.key === "F12"){
+      e.preventDefault();
+    }
+
+    // CTRL+SHIFT+I
+    if(e.ctrlKey && e.shiftKey && e.key === 'I'){
+      e.preventDefault();
+    }
+
+    // CTRL+SHIFT+J
+    if(e.ctrlKey && e.shiftKey && e.key === 'J'){
+      e.preventDefault();
+    }
+
+    // CTRL+U
+    if(e.ctrlKey && e.key === 'u'){
+      e.preventDefault();
+    }
+
+  });
+
+  // Prevent drag download
+  const video = document.getElementById("video");
+
+  video.addEventListener('dragstart', e => {
+    e.preventDefault();
+  });
+
+</script>
+</body>
+</html>
 
 <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
