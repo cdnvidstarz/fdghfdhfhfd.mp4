@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 Tombol Link</title>
+    <title>3 Tombol Link Vertikal</title>
 
     <style>
         body{
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f4f4f4;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column; /* Membuat tombol tersusun ke bawah */
+            gap: 15px;
         }
 
         .btn{
-            display: inline-block;
-            padding: 12px 25px;
-            margin: 10px;
             text-decoration: none;
+            padding: 15px 30px;
+            background: #4CAF50;
             color: white;
-            background-color: #4CAF50;
             border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
             transition: 0.3s;
         }
 
         .btn:hover{
-            opacity: 0.8;
+            transform: scale(1.05);
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <a href="https://example1.com" class="btn" target="_blank">Tombol 1</a>
-
-    <a href="https://example2.com" class="btn" target="_blank">Tombol 2</a>
-
-    <a href="https://example3.com" class="btn" target="_blank">Tombol 3</a>
+    <div class="container">
+        <a href="https://link1.com" class="btn" target="_blank">🔗 Tombol Link 1</a>
+        <a href="https://link2.com" class="btn" target="_blank">🔗 Tombol Link 2</a>
+        <a href="https://link3.com" class="btn" target="_blank">🔗 Tombol Link 3</a>
+    </div>
 
 </body>
 </html>
